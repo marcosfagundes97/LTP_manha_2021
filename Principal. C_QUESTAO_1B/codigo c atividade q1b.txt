@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main(void) {
+int e_nro_1,e_nro_2,e_nro_3;
+
+  printf("entre com o numero 1:\t");
+  scanf("%i",&e_nro_1);
+
+  printf("entre com o numero 2:\t");
+  scanf("%i",&e_nro_2);
+
+  printf("entre com o numero 3:\t");
+  scanf("%i",&e_nro_3);
+
+  if(e_nro_1>e_nro_2){
+
+  if(e_nro_2>e_nro_3){
+    printf("%i\n",e_nro_3);
+    printf("%i\n",e_nro_2);
+    printf("%i\n",e_nro_1);
+  }else{if (e_nro_1 >e_nro_2) {
+
+  printf("%i\n",e_nro_2);
+  printf("%i\n",e_nro_3);
+  printf("%i\n",e_nro_1);
+  }else{
+    printf("%i\n",e_nro_2);
+    printf("%i\n",e_nro_1);
+    printf("%i\n",e_nro_3);
+  }}}else {if(e_nro_1>e_nro_3)
+  {printf("%i\n",e_nro_3);
+  printf("%i\n",e_nro_1);
+  printf("%i\n",e_nro_2);
+  }else{if(e_nro_2>e_nro_3){
+    printf("%i\n",e_nro_1);
+    printf("%i\n",e_nro_2);
+    printf("%i\n",e_nro_3);
+  }else{
+    printf("%i\n",e_nro_1);
+    printf("%i\n",e_nro_2);
+    printf("%i\n",e_nro_3);
+  }}}
+
+  return 0;
+}
