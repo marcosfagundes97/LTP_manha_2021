@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(void) 
+{
+int num_1,num_2,vt_num1,vt_num2;
+
+printf("digite o 1°numero\n");
+scanf("%i",&num_1);
+
+printf("digite o 2°numero\n");
+scanf("%i",&num_2);
+
+vt_num1=num_2;
+
+vt_num2=num_1;
+
+
+
+printf("o 1°numero foi para:%i\n",vt_num1);
+
+printf("o 2° numero foi para:%i\n",vt_num2);
+
+
+return 0;
+}
