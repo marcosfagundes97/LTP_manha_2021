@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(void) {
+  float resistor_1,resistor_2,resistor_3,resistor_4,req,resultado_1,resultado_2,resultado_3;
+
+
+
+  printf("entre com valor do resistor 1\n");
+  scanf("%f",&resistor_1);
+
+  printf("entre com valor do resistor 2\n");
+  scanf("%f",&resistor_2);
+
+  printf("entre com o valor do resistor 3\n");
+  scanf("%f",&resistor_3);
+
+  printf("entre com o valordo resistor 4\n");
+  scanf("%f",&resistor_4);
+
+  resultado_1=1/(1/resistor_4+1/resistor_3);
+
+  resultado_2=1/(1/resultado_1+1/resistor_2);
+
+  resultado_3=1/(1/resultado_2+1/resistor_1);
+  req=resultado_3;
+
+  printf("resistencia equivalente é\n%f ohms",req);
+
+return  0;
+}
