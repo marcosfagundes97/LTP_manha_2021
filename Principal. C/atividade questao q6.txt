@@ -1,0 +1,76 @@
+#include <stdio.h>
+
+int main(void) {
+
+float area_fio,comprimento,material,temperatura,def_material,coef_temp,c_prata,c_cobre,c_ouro,c_aluminio,c_tungstenio,prata,ouro,aluminio,cobre,tungstenio,resistencia;
+
+printf("Para material prata digite 1 \t\nPara material cobre digite 2 \t\npara material ouro digite 3\t\npara material aluminio digite 4\t\npara material tungstenio digite 5\n");
+
+scanf("%f",&def_material);
+
+printf("digite o comprimento do fio\n");
+scanf("%f",&comprimento);
+
+printf("digite a area do fio em [cm²]\n");
+scanf("%f",&area_fio);
+
+printf("digite a temperatura em graus celcius\n");
+scanf("%f",&temperatura);
+
+prata = 0.00000159;
+cobre=0.00000172;
+ouro=0.00000244;
+aluminio=0.00000292;
+tungstenio=0.0000056;
+c_prata=0.038;
+c_cobre=0.039;
+c_ouro=0.034;
+c_aluminio=0.039;
+c_tungstenio=0.045;
+
+if(temperatura==20){ if(def_material==1)
+{ resistencia= (prata*comprimento)/area_fio;
+printf("resistencia=%.10f\t",resistencia);
+}else{if(def_material==2){
+  resistencia=cobre*comprimento/area_fio;
+  printf("resistencia=%.10f\t",resistencia);
+}else{if(def_material==3){
+  resistencia=ouro*comprimento/area_fio;
+  printf("resistencia=%.10f\t",resistencia);
+}else{if(def_material==4){
+  resistencia=aluminio*comprimento/area_fio;
+  printf("resistencia=%.10f",resistencia);
+}else{if(def_material==5){
+  resistencia=tungstenio*comprimento/area_fio;
+}else{if(def_material>5){
+  printf("erro na definiçao do material");}
+  else{if(def_material<1){
+    printf("erro na definiçao do material");
+  }}}}}}}}else{if(def_material==1){
+    resistencia=prata*(1+c_prata*temperatura-20);
+    printf("resistencia=%.10f\t",resistencia);
+  }else{if(def_material==2){
+    resistencia=cobre*(1+c_cobre*temperatura-20);
+printf("resistencia=%.10f\t",resistencia);}else{if(def_material==3){resistencia=ouro*(1+c_ouro*temperatura-20);
+printf("resistencia=%.10f",resistencia);}
+else{if(def_material==4){
+  resistencia=aluminio*(1+c_aluminio*temperatura-20);
+  printf("resistencia=%.10f",resistencia);
+}else{if(def_material==5){
+  resistencia=tungstenio*(1+c_tungstenio*temperatura-20);
+  printf("resistencia=%.10f",resistencia);}else{if(def_material>5){
+    printf("erro na definiçao do material");}else{if
+      (def_material<1){
+        printf("erro na definiçao do material");}}}}}}}}
+
+
+
+
+
+
+
+
+
+
+  return 0;
+}
