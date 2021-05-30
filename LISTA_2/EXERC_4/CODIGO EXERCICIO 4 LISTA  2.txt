@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+
+int atraso(int tempo){
+  int delay;
+  delay=0;
+
+  while(delay<tempo){
+
+    delay++;
+  }
+    return delay;
+  }
+
+
+
+
+
+
+int main(void) {
+  
+int num,aux;
+
+num=0;
+printf("digite 1 para o pisca-pisca acender ou 0 para desligar");
+scanf("%i",&aux);
+if(aux==1){
+
+while(1){
+printf("acende\n");
+atraso(200000000);
+printf("apaga\n");
+atraso(200000000);
+
+
+
+
+
+
+
+
+
+}
+}else if(aux==0){
+
+printf("apagado");
+
+
+}
+
+
+
+
+  return 0;
+}
