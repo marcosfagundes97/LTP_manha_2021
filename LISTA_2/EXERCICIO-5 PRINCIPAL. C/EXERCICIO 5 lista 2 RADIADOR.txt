@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+
+int liga_ventoinha(int tempo){
+  int aux;
+  aux=0;
+
+  while(aux<=tempo){
+
+    aux++;
+  }
+    return aux;
+  }
+
+
+int main(void) {
+  
+int temperatura,aux,tmp;
+while(1){
+
+printf("digite a temperatura do radiador");
+scanf("%i",&temperatura);
+aux=90;
+
+while(temperatura<aux){
+
+printf("digite a temperatura do radiador");
+scanf("%i",&temperatura);
+
+
+
+}
+aux=70;
+
+tmp=0;
+
+while(tmp<aux){
+
+printf("ventoinha ligada\n");
+liga_ventoinha(10000000);
+
+tmp++;
+
+
+}
+}
+  return 0;
+}
